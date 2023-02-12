@@ -1,0 +1,136 @@
+/*logo*/
+.header {
+    border: 1px solid #ECECEC;
+
+    &__container {
+            display: flex;
+        }
+
+        &__logo {
+            margin-right: 93px;
+            padding-top: 24px;
+            padding-bottom: 24px;
+        }
+}
+
+.logo {
+    color: $primary-text-color;
+    font-size: 26px;
+    font-family: "Raleway", sans-serif;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    font-weight: 700;
+
+    display: flex;
+
+    &__accent {
+            color: $accent-color;
+        }
+}
+
+
+
+/*.site_nav + text*/
+.nav {
+    display: flex;
+    color: $primary-text-color;
+    letter-spacing: 0.02em;
+    line-height: 1.14;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 250ms;
+    transition-duration: 250ms;
+    -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &__item {
+            display: block;
+            position: relative;
+    
+            &:not(:first-child) {
+                margin-left: 50px;
+            }
+        }
+}
+
+.nav__link--link.nav__link--current::after {
+    position: absolute;
+    content: "";
+    display: block;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: $accent-color;
+}
+
+
+.nav :hover,
+.nav :focus {
+    color: $accent-color;
+}
+
+.nav .nav__link--link.nav__link--current {
+    color: $accent-color;
+}
+
+.nav__link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+/*auth_nav*/
+.auth_nav {
+
+    display: flex;
+    margin-left: auto;
+
+    &__link {
+    
+            display: flex;
+            color: $text-color;
+            font-size: 14px;
+            letter-spacing: 0.02em;
+            line-height: 1.14;
+            text-decoration: none;
+            font-weight: 500;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+    
+            -webkit-transition-property: color;
+            transition-property: color;
+            -webkit-transition-duration: 250ms;
+            transition-duration: 250ms;
+            -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+            &:hover,
+            &:focus {
+                    color: $accent-color;
+                    fill: $accent-color$accent-color;
+        }
+}
+
+
+
+.auth_nav-title {
+    margin-left: 50px;
+}
+
+
+
+&__icon {
+    display: block;
+    fill: currentColor;
+    margin-right: 10px;
+    
+}
+
+}
