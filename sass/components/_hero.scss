@@ -43,7 +43,7 @@
 .bg-img-hero {
     //phone screen(<768px)
     
-    
+    background-position: center;
         background-size: cover;
         margin-left: auto;
             margin-right: auto;
@@ -55,7 +55,8 @@
                             (min-resolution: 192dpi),
                             (min-resolution: 2dppx) {
                                 .box {
-                                    background-image: url('../../images/mobile/hero-320@2x.png');
+                                    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                                            rgba(47, 48, 58, 0.4)),url('../../images/mobile/hero-320@2x.png');
                                 }
                             }
             
@@ -69,7 +70,8 @@
                             (min-resolution: 192dpi),
                             (min-resolution: 2dppx) {
                                 .box {
-                                    background-image: url('../../images/tablet/bg768@2x.png');
+                                    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                                            rgba(47, 48, 58, 0.4)),url('../../images/tablet/bg768@2x.png');
                                 }
                             }
         }
@@ -88,7 +90,8 @@
                             (min-resolution: 192dpi),
                             (min-resolution: 2dppx) {
                                 .box {
-                                    background-image: url('../../images/Imgbg@2x.png');
+                                    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                                            rgba(47, 48, 58, 0.4)),url('../../images/Imgbg@2x.png');
                                 }
                             }
         }
