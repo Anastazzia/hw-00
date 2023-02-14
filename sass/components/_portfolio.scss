@@ -30,6 +30,8 @@
   display: flex;
   align-items: start;
   margin-bottom: 40px;
+  flex-wrap: wrap;
+  gap: 15px;
 
   //tablet screen (>768px )
   @media screen and (min-width: 768px), (max-width: 1199.98) {
@@ -58,6 +60,9 @@
 
   &__item {
     //phone screen(<768px)
+    @media screen and (max-width: 764px) {
+      margin-left: 0px;
+    }
 
     //tablet screen (>768px )
     @media screen and (min-width: 768px), (max-width: 1199.98) {
@@ -73,7 +78,7 @@
 
     &:hover,
     &:focus {
-      color: $primary-bg-color;
+      color: white;
       background-color: $accent-color;
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     }
@@ -108,12 +113,17 @@
   @media screen and (min-width: 768px), (max-width: 1199.98) {
     margin-bottom: 0px;
     width: 354px;
+    display: flex;
   }
 
   //desctop screen (>1200px)
   @media screen and (min-width: 1200px) {
     width: 370px;
   }
+}
+
+.portfolio__item:not(:last-child) {
+  flex-grow: 1;
 }
 .portfolio__item:hover,
 .portfolio__item:focus {
@@ -125,6 +135,9 @@
 
   //tablet screen (>768px )
   @media screen and (min-width: 768px), (max-width: 1199.98) {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
   }
 
   //desctop screen (>1200px)
@@ -135,6 +148,10 @@
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio__link:not(:last-child) {
+  flex-grow: 1;
 }
 
 .portfolio__before-text-portfolio {
@@ -244,6 +261,7 @@
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
+  flex-grow: 1;
 
   //tablet screen (>768px )
   @media screen and (min-width: 768px), (max-width: 1199.98) {

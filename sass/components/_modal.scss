@@ -1,451 +1,463 @@
 .backdrop {
-    //phone screen(<768px)
-        @media screen and (max-width: 764px) {}
-    
-        //tablet screen (>768px )
-        @media screen and (min-width: 768px),
-        (max-width: 1199.98) {}
-    
-        //desctop screen (>1200px)
-        @media screen and (min-width: 1200px) {}
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: var(--backdrop-idx);
+  //phone screen(<768px)
+  @media screen and (max-width: 764px) {
+  }
 
-    width: 100%;
-    height: 100%;
+  //tablet screen (>768px )
+  @media screen and (min-width: 768px), (max-width: 1199.98) {
+  }
 
-    background-color: rgba(0, 0, 0, 0.4);
+  //desctop screen (>1200px)
+  @media screen and (min-width: 1200px) {
+  }
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: var(--backdrop-idx);
 
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .backdrop.is-hidden {
-    //phone screen(<768px)
-        @media screen and (max-width: 764px) {}
-    
-        //tablet screen (>768px )
-        @media screen and (min-width: 768px),
-        (max-width: 1199.98) {}
-    
-        //desctop screen (>1200px)
-        @media screen and (min-width: 1200px) {}
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
+  //phone screen(<768px)
+  @media screen and (max-width: 764px) {
+  }
+
+  //tablet screen (>768px )
+  @media screen and (min-width: 768px), (max-width: 1199.98) {
+  }
+
+  //desctop screen (>1200px)
+  @media screen and (min-width: 1200px) {
+  }
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 .modal {
-    //phone screen(<768px)
-        @media screen and (max-width: 764px) {
-            width: 450px;
-        }
-    
-        //tablet screen (>768px )
-        @media screen and (min-width: 768px),
-        (max-width: 1199.98) {}
-    
-        //desctop screen (>1200px)
-        @media screen and (min-width: 1200px) {}
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateY(-50%) translateX(-50%);
+  //phone screen(<768px)
+  @media screen and (max-width: 764px) {
+    max-width: 450px;
+    width: 90%;
+  }
 
+  //tablet screen (>768px )
+  @media screen and (min-width: 768px), (max-width: 1199.98) {
+    width: 450px;
+  }
+
+  //desctop screen (>1200px)
+  @media screen and (min-width: 1200px) {
     width: 528px;
+  }
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
 
-    background-color: $primary-bg-color;
-    border-radius: 4px;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  background-color: $primary-bg-color;
+  border-radius: 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 
-    transition: opacity 150ms ease 400ms, transform 150ms ease 400ms;
+  transition: opacity 150ms ease 400ms, transform 150ms ease 400ms;
 
-    padding: 40px;
+  padding: 40px;
 
+  &__modal-title {
+    //phone screen(<768px)
+    @media screen and (max-width: 764px) {
+      display: block;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: calc(30 / 20);
+      text-align: center;
+      letter-spacing: 0.03em;
+      margin-bottom: 12px;
+    }
 
-    &__modal-title {
-        //phone screen(<768px)
-            @media screen and (max-width: 764px) {
-                display: block;
-                font-weight: 700;
-                    font-size: 20px;
-                    line-height: calc( 30/20 );
-                    text-align: center;
-                    letter-spacing: 0.03em;
-                    margin-bottom: 12px;
-            }
-        
-            //tablet screen (>768px )
-            @media screen and (min-width: 768px),
-            (max-width: 1199.98) {
-                display: block;
-                    font-weight: 700;
-                    font-size: 20px;
-                    line-height: calc(30/20);
-                    text-align: center;
-                    letter-spacing: 0.03em;
-                    margin-bottom: 12px;
-                    
-                    padding-left: 50px;
-                    padding-right: 59px;
-            }
-        
-            //desctop screen (>1200px)
-            @media screen and (min-width: 1200px) {
-                display: block;
-                    font-size: 700px;
-                    font-size: 18px;
-                    line-height: calc(23 / 20);
-                    text-align: center;
-                    align-items: center;
-                    letter-spacing: 0.03em;
-                    text-transform: uppercase;
-                    line-height: 23px;
-                    width: 448px;
-                
-                    margin-bottom: 12px;
-            }
-            
-    
-        }
+    //tablet screen (>768px )
+    @media screen and (min-width: 768px), (max-width: 1199.98) {
+      display: block;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: calc(30 / 20);
+      text-align: center;
+      letter-spacing: 0.03em;
+      margin-bottom: 12px;
+
+      padding-left: 50px;
+      padding-right: 59px;
+    }
+
+    //desctop screen (>1200px)
+    @media screen and (min-width: 1200px) {
+      display: block;
+      font-size: 700px;
+      font-size: 18px;
+      line-height: calc(23 / 20);
+      text-align: center;
+      align-items: center;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      line-height: 23px;
+      width: 448px;
+
+      margin-bottom: 12px;
+    }
+  }
 }
 
 .backdrop.is-hidden.modal {
-    //phone screen(<768px)
-        @media screen and (max-width: 764px) {}
-    
-        //tablet screen (>768px )
-        @media screen and (min-width: 768px),
-        (max-width: 1199.98) {}
-    
-        //desctop screen (>1200px)
-        @media screen and (min-width: 1200px) {}
-    opacity: 0;
-    transform: translateX(-50%) translateY(-50%);
+  //phone screen(<768px)
+  @media screen and (max-width: 764px) {
+  }
+
+  //tablet screen (>768px )
+  @media screen and (min-width: 768px), (max-width: 1199.98) {
+  }
+
+  //desctop screen (>1200px)
+  @media screen and (min-width: 1200px) {
+  }
+  opacity: 0;
+  transform: translateX(-50%) translateY(-50%);
 }
 
 .modal__modal-btn {
-    //phone screen(<768px)
-        @media screen and (max-width: 764px) {}
-    
-        //tablet screen (>768px )
-        @media screen and (min-width: 768px),
-        (max-width: 1199.98) {}
-    
-        //desctop screen (>1200px)
-        @media screen and (min-width: 1200px) {}
-    position: absolute;
-    top: 8px;
-    right: 8px;
+  //phone screen(<768px)
+  @media screen and (max-width: 764px) {
+  }
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  //tablet screen (>768px )
+  @media screen and (min-width: 768px), (max-width: 1199.98) {
+  }
 
-    width: 30px;
-    height: 30px;
-    padding: 0;
+  //desctop screen (>1200px)
+  @media screen and (min-width: 1200px) {
+  }
+  position: absolute;
+  top: 8px;
+  right: 8px;
 
-    border-radius: 60%;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    &:hover .modal__modal-icon,
-    &:focus .modal__modal-icon {
-            fill: $accent-color;
-        }
+  width: 30px;
+  height: 30px;
+  padding: 0;
 
+  border-radius: 60%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+
+  &:hover .modal__modal-icon,
+  &:focus .modal__modal-icon {
+    fill: $accent-color;
+  }
 }
 
 .modal__modal-icon {
-    //phone screen(<768px)
-        @media screen and (max-width: 764px) {}
-    
-        //tablet screen (>768px )
-        @media screen and (min-width: 768px),
-        (max-width: 1199.98) {}
-    
-        //desctop screen (>1200px)
-        @media screen and (min-width: 1200px) {}
-    fill: $text-color;
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  //phone screen(<768px)
+  @media screen and (max-width: 764px) {
+  }
+
+  //tablet screen (>768px )
+  @media screen and (min-width: 768px), (max-width: 1199.98) {
+  }
+
+  //desctop screen (>1200px)
+  @media screen and (min-width: 1200px) {
+  }
+  fill: $text-color;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-form{
+.modal-form {
+  //phone screen(<768px)
+  @media screen and (max-width: 764px) {
+  }
+
+  //tablet screen (>768px )
+  @media screen and (min-width: 768px) {
+  }
+
+  //desctop screen (>1200px)
+  @media screen and (min-width: 1200px) {
+  }
+
+  &__label {
     //phone screen(<768px)
-        @media screen and (max-width: 764px) {}
-    
-        //tablet screen (>768px )
-        @media screen and (min-width: 768px),
-        (max-width: 1199.98) {}
-    
-        //desctop screen (>1200px)
-        @media screen and (min-width: 1200px) {}
+    @media screen and (max-width: 764px) {
+    }
 
-    &__label {
-        //phone screen(<768px)
-            @media screen and (max-width: 764px) {}
-        
-            //tablet screen (>768px )
-            @media screen and (min-width: 768px),
-            (max-width: 1199.98) {}
-        
-            //desctop screen (>1200px)
-            @media screen and (min-width: 1200px) {}
-            display: block;
-            margin-bottom: 4px;
-            font-size: 12px;
-            letter-spacing: 0.01em;
-            line-height: calc(14 / 12);
-    
-            color: $text-color;
-            margin-bottom: 4px;
-    
-        }
+    //tablet screen (>768px )
+    @media screen and (min-width: 768px) {
+    }
 
-        &__group {
-            //phone screen(<768px)
-                @media screen and (max-width: 764px) {}
-            
-                //tablet screen (>768px )
-                @media screen and (min-width: 768px),
-                (max-width: 1199.98) {}
-            
-                //desctop screen (>1200px)
-                @media screen and (min-width: 1200px) {}
-            position: relative;
-            margin-bottom: 10px;
-        
-        
-        }
+    //desctop screen (>1200px)
+    @media screen and (min-width: 1200px) {
+    }
+    display: block;
+    margin-bottom: 4px;
+    font-size: 12px;
+    letter-spacing: 0.01em;
+    line-height: calc(14 / 12);
 
-        &__field {
-            //phone screen(<768px)
-                @media screen and (max-width: 764px) {}
-            
-                //tablet screen (>768px )
-                @media screen and (min-width: 768px),
-                (max-width: 1199.98) {}
-            
-                //desctop screen (>1200px)
-                @media screen and (min-width: 1200px) {}
-            display: block;
-            width: 100%;
-            height: 40px;
-            padding: 12px 12px 12px 42px;
-        
-            border: 1px solid rgba(33, 33, 33, 0.2);
-            border-radius: 4px;
-            outline: transparent;
-        
-            transition: 250ms;
-        
-            &:focus {
-                border-color: $accent-color;
-            }
-        }
+    color: $text-color;
+    margin-bottom: 4px;
+  }
 
-        &__icon {
-            //phone screen(<768px)
-                @media screen and (max-width: 764px) {}
-            
-                //tablet screen (>768px )
-                @media screen and (min-width: 768px),
-                (max-width: 1199.98) {}
-            
-                //desctop screen (>1200px)
-                @media screen and (min-width: 1200px) {}
-            position: absolute;
-        
-            width: 18px;
-            height: 18px;
-        
-            top: 50%;
-            left: 12px;
-            transform: translateY(-50%);
-        
-        
-        }
-
-}
-
-
-.modal-form__field:focus+.modal-form__icon {
-    fill: $accent-color;
-
-}
-
-.modal-texteria {
+  &__group {
     //phone screen(<768px)
-        @media screen and (max-width: 764px) {
-            width: 370px;
-        }
-    
-        //tablet screen (>768px )
-        @media screen and (min-width: 768px),
-        (max-width: 1199.98) {}
-    
-        //desctop screen (>1200px)
-        @media screen and (min-width: 1200px) {}
-    width: 448px;
-    max-height: 120px;
+    @media screen and (max-width: 764px) {
+    }
+
+    //tablet screen (>768px )
+    @media screen and (min-width: 768px), (max-width: 1199.98) {
+    }
+
+    //desctop screen (>1200px)
+    @media screen and (min-width: 1200px) {
+    }
+    position: relative;
+    margin-bottom: 10px;
+  }
+
+  &__field {
+    //phone screen(<768px)
+    @media screen and (max-width: 764px) {
+    }
+
+    //tablet screen (>768px )
+    @media screen and (min-width: 768px), (max-width: 1199.98) {
+    }
+
+    //desctop screen (>1200px)
+    @media screen and (min-width: 1200px) {
+    }
+    display: block;
+    width: 100%;
+    height: 40px;
+    padding: 12px 12px 12px 42px;
 
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-
-    padding: 12px 16px;
-
-    transition: 250ms;
     outline: transparent;
 
-    margin-bottom: 10px;
+    transition: 250ms;
 
     &:focus {
-            border-color: $accent-color;
-        }
+      border-color: $accent-color;
+    }
+  }
 
+  &__icon {
+    //phone screen(<768px)
+    @media screen and (max-width: 764px) {
+    }
 
+    //tablet screen (>768px )
+    @media screen and (min-width: 768px), (max-width: 1199.98) {
+    }
 
+    //desctop screen (>1200px)
+    @media screen and (min-width: 1200px) {
+    }
+    position: absolute;
+
+    width: 18px;
+    height: 18px;
+
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+  }
 }
 
+.modal-form__field:focus + .modal-form__icon {
+  fill: $accent-color;
+}
+
+.modal-texteria {
+  //phone screen(<768px)
+  @media screen and (max-width: 764px) {
+    max-width: 450px;
+    width: 100%;
+  }
+
+  //tablet screen (>768px )
+  @media screen and (min-width: 768px) {
+    max-width: 450px;
+    width: 100%;
+  }
+
+  //desctop screen (>1200px)
+  @media screen and (min-width: 1200px) {
+    width: 448px;
+    width: 100%;
+  }
+
+  max-height: 120px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  padding: 12px 16px;
+
+  transition: 250ms;
+  outline: transparent;
+
+  margin-bottom: 10px;
+
+  &:focus {
+    border-color: $accent-color;
+  }
+}
 
 /*
 checkbox*/
 
-
-
 .modal-form__label-checkbox {
-    //phone screen(<768px)
-        @media screen and (max-width: 764px) {}
-    
-        //tablet screen (>768px )
-        @media screen and (min-width: 768px),
-        (max-width: 1199.98) {}
-    
-        //desctop screen (>1200px)
-        @media screen and (min-width: 1200px) {}
-    display: flex;
+  //phone screen(<768px)
+  @media screen and (max-width: 764px) {
+  }
 
+  //tablet screen (>768px )
+  @media screen and (min-width: 768px), (max-width: 1199.98) {
+  }
 
-    align-items: center;
-    justify-content: center;
+  //desctop screen (>1200px)
+  @media screen and (min-width: 1200px) {
+  }
+  display: flex;
 
-    font-size: 14px;
-    padding-left: 16px;
-    margin-bottom: 30px;
+  align-items: center;
+  justify-content: center;
 
-
+  font-size: 14px;
+  padding-left: 16px;
+  margin-bottom: 30px;
 }
 
 .checkbox-link {
-    //phone screen(<768px)
-        @media screen and (max-width: 764px) {
-            font-size: 12px;
-        }
-    
-        //tablet screen (>768px )
-        @media screen and (min-width: 768px),
-        (max-width: 1199.98) {}
-    
-        //desctop screen (>1200px)
-        @media screen and (min-width: 1200px) {}
-    color: $accent-color;
-    text-decoration: underline;
+  //phone screen(<768px)
+  @media screen and (max-width: 764px) {
+    font-size: 12px;
+    line-height: calc(14 / 12);
+  }
+
+  //tablet screen (>768px )
+  @media screen and (min-width: 768px) {
+    font-size: 12px;
+    line-height: calc(14 / 12);
+  }
+
+  //desctop screen (>1200px)
+  @media screen and (min-width: 1200px) {
+  }
+  color: $accent-color;
+  text-decoration: underline;
 }
 
 .checkbox-form {
-    //phone screen(<768px)
-        @media screen and (max-width: 764px) {
-            
-        }
-    
-        //tablet screen (>768px )
-        @media screen and (min-width: 768px),
-        (max-width: 1199.98) {
-            color: $text-color;
-                font-weight: 400;
-                font-size: 12px;
-                line-height: calc(14/12);
-                letter-spacing: 0.03em;
-        }
-    
-        //desctop screen (>1200px)
-        @media screen and (min-width: 1200px) {}
+  //phone screen(<768px)
+  @media screen and (max-width: 764px) {
+    font-size: 12px;
+  }
 
-    appearance: none;
+  //tablet screen (>768px )
+  @media screen and (min-width: 768px), (max-width: 1199.98) {
+    color: $text-color;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: calc(14 / 12);
+    letter-spacing: 0.03em;
+  }
 
-    width: 16px;
-    height: 15px;
-    border-radius: 2px;
-    border: 2px solid black;
-    cursor: pointer;
-    margin-right: 7px;
+  //desctop screen (>1200px)
+  @media screen and (min-width: 1200px) {
+  }
 
-    &:checked {
-            border-color: $accent-color;
-            background-color: $accent-color;
-            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512' fill='white'%3E%3Cpath d='M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z'/%3E%3C/svg%3E");
-        }
+  appearance: none;
+
+  width: 16px;
+  height: 15px;
+  border-radius: 2px;
+  border: 2px solid black;
+  cursor: pointer;
+  margin-right: 7px;
+
+  &:checked {
+    border-color: $accent-color;
+    background-color: $accent-color;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512' fill='white'%3E%3Cpath d='M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z'/%3E%3C/svg%3E");
+  }
 }
 
 .checkbox-text {
-    //phone screen(<768px)
-        @media screen and (max-width: 764px) {
-            color: $text-color;
-            margin-right: 5px;
-            font-size: 12px;
-        }
-    
-        //tablet screen (>768px )
-        @media screen and (min-width: 768px),
-        (max-width: 1199.98) {
-            color: $text-color;
-            margin-right: 5px;
-                
-        }
-    
-        //desctop screen (>1200px)
-        @media screen and (min-width: 1200px) {
-            color: $text-color;
-                margin-right: 5px;
-                
-        }
-    
+  //phone screen(<768px)
+  @media screen and (max-width: 764px) {
+    color: $text-color;
+    margin-right: 3px;
+    font-size: 12px;
+    line-height: calc(14 / 12);
+  }
+
+  //tablet screen (>768px )
+  @media screen and (min-width: 768px), (max-width: 1199.98) {
+    color: $text-color;
+    margin-right: 5px;
+    font-size: 12px;
+    line-height: calc(14 / 12);
+  }
+
+  //desctop screen (>1200px)
+  @media screen and (min-width: 1200px) {
+    color: $text-color;
+    margin-right: 5px;
+  }
 }
 
 .checkbox-btn {
-    //phone screen(<768px)
-        @media screen and (max-width: 764px) {}
-    
-        //tablet screen (>768px )
-        @media screen and (min-width: 768px),
-        (max-width: 1199.98) {}
-    
-        //desctop screen (>1200px)
-        @media screen and (min-width: 1200px) {}
+  //phone screen(<768px)
+  @media screen and (max-width: 764px) {
+  }
 
-    width: 200px;
-    height: 50px;
+  //tablet screen (>768px )
+  @media screen and (min-width: 768px), (max-width: 1199.98) {
+  }
 
-    background-color: $accent-color;
+  //desctop screen (>1200px)
+  @media screen and (min-width: 1200px) {
+  }
+
+  height: 50px;
+
+  background-color: $accent-color;
+  color: $primary-bg-color;
+  font-weight: 700;
+  padding: 10px 52px;
+  border-radius: 4px;
+
+  transition-property: background-color, color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: $bg-button;
     color: $primary-bg-color;
-    font-weight: 700;
-    padding: 10px 52px;
-    border-radius: 4px;
-
-    margin-left: 124px;
-    margin-right: 124px;
-
-    transition-property: background-color, color, box-shadow;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-    &:hover,
-    &:focus {
-            background-color: $bg-button;
-            color: $primary-bg-color;
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-        }
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
 }
 
+.btn-modalka {
+  text-align: center;
+}
