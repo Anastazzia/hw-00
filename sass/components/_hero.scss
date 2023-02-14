@@ -10,7 +10,7 @@
   background-size: cover;
 
   //tablet screen (>768px )
-  @media screen and (min-width: 768px), (max-width: 1199.98) {
+  @media screen and (min-width: 768px) {
     padding-top: 118px;
     padding-bottom: 118px;
     text-align: center;
@@ -76,7 +76,7 @@
   }
 
   //desctop screen (>1200px)
-  @media screen and (min-width: 769px) {
+  @media screen and (min-width: 767px) {
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
@@ -152,7 +152,7 @@
       background-color: $bg-button;
 
       //tablet screen (>768px )
-      @media screen and (min-width: 768px), (max-width: 1199.98) {
+      @media screen and (max-width: 1199.98) {
         padding: 10px 32px;
       }
 

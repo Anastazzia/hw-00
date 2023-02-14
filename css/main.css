@@ -512,6 +512,12 @@ body {
   font-size: 14px;
   line-height: 1.1428571429;
   letter-spacing: 0.02em;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 250ms;
+  transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 /*auth_nav*/
 @media screen and (max-width: 764px) {
@@ -559,17 +565,21 @@ body {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (min-width: 768px), (max-width: 1199.98) {
-  .auth_nav__link {
-    font-size: 12px;
-  }
-}
 .auth_nav__link:hover, .auth_nav__link:focus {
   color: #2196F3;
   fill: #2196F3 #2196F3;
 }
 @media screen and (min-width: 768px), (max-width: 1199.98) {
-  .auth_nav .auth_nav-title {
+  .auth_nav__link {
+    font-size: 12px;
+  }
+}
+.auth_nav .auth_nav-title:hover, .auth_nav .auth_nav-title:focus {
+  color: #2196F3;
+  fill: #2196F3 #2196F3;
+}
+@media screen and (max-width: 1199px) {
+  .auth_nav .auth_nav-title:not(:last-child) {
     margin-bottom: 10px;
   }
 }
@@ -625,7 +635,7 @@ body {
   margin-right: auto;
   background-size: cover;
 }
-@media screen and (min-width: 768px), (max-width: 1199.98) {
+@media screen and (min-width: 768px) {
   .section-hero {
     padding-top: 118px;
     padding-bottom: 118px;
@@ -675,13 +685,13 @@ body {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet/hero/hero-bg@2x.png);
   }
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 767px) {
   .bg-img-hero {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/desc/hero/hero-bg.png);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/desc/hero/hero-bg.png);
   }
 }
-@media screen and (min-width: 769px) and (min-device-pixel-ratio: 2), screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 767px) and (min-device-pixel-ratio: 2), screen and (min-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 767px) and (min-resolution: 192dpi), screen and (min-width: 767px) and (min-resolution: 2dppx) {
   .bg-img-hero {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/desc/hero/hero-bg@2x.png);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/desc/hero/hero-bg@2x.png);
@@ -726,7 +736,7 @@ body {
   color: #FFFFFF;
   background-color: #188CE8;
 }
-@media screen and (min-width: 768px), (max-width: 1199.98) {
+@media screen and (max-width: 1199.98) {
   .hero__button:hover, .hero__button:focus {
     padding: 10px 32px;
   }
@@ -2234,6 +2244,13 @@ checkbox*/
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   padding: 6px 22px;
 }
+.pointer:hover, .pointer:focus {
+  color: white;
+  background-color: #2196F3;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+}
 @media screen and (min-width: 1200px) {
   .pointer {
     padding-top: 6px;
@@ -2298,13 +2315,6 @@ checkbox*/
     margin-left: 0px;
   }
 }
-.portfolio-button__item:hover, .portfolio-button__item:focus {
-  color: white;
-  background-color: #2196F3;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
 .portfolio {
   display: block;
 }
