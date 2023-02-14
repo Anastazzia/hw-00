@@ -1,319 +1,263 @@
-
-
 .pointer {
-    //phone screen(<768px)
-    cursor: pointer;
-        font-family: 'Roboto', sans-serif;
-        font-weight: 500;
-        letter-spacing: 0.03em;
-        line-height: 1.62;
-        font-size: 16px;
+  //phone screen(<768px)
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  line-height: 1.62;
+  font-size: 16px;
 
-    transition-property: background-color, box-shadow, color;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        padding: 6px 22px;
-    
-    
-        //tablet screen (>768px )
-        @media screen and (min-width: 768px),
-        (max-width: 1199.98) {}
-    
-        //desctop screen (>1200px)
-        @media screen and (min-width: 1200px) {
+  transition-property: background-color, box-shadow, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 6px 22px;
 
-                padding-top: 6px;
-                padding-bottom: 6px;
-                padding-left: 22px;
-                padding-right: 22px;
-        }
-    
+  //tablet screen (>768px )
+  @media screen and (min-width: 768px), (max-width: 1199.98) {
+  }
 
-    
+  //desctop screen (>1200px)
+  @media screen and (min-width: 1200px) {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 22px;
+    padding-right: 22px;
+  }
 }
 
 .portfolio-button {
-    //phone screen(<768px)
+  //phone screen(<768px)
+  display: flex;
+  align-items: start;
+  margin-bottom: 40px;
+
+  //tablet screen (>768px )
+  @media screen and (min-width: 768px), (max-width: 1199.98) {
+    margin-bottom: 30px;
+    text-align: center;
     display: flex;
-    align-items: start;
-    margin-bottom: 40px;
-    
+    justify-content: center;
+    min-width: 575px;
+    margin-bottom: 34px;
+    border-radius: 4px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 
-    
-    
-        //tablet screen (>768px )
-        @media screen and (min-width: 768px),
-        (max-width: 1199.98) {
-            margin-bottom: 30px;
-            text-align: center;
-                display: flex;
-                justify-content: center;
-                min-width: 575px;
-                margin-bottom: 34px;
-                border-radius: 4px;
-                margin-right: auto;
-                margin-left: auto;
-        }
-    
-        //desctop screen (>1200px)
-        @media screen and (min-width: 1200px) {
-            text-align: center;
-                display: flex;
-                justify-content: center;
-                min-width: 575px;
-                margin-bottom: 34px;
-                border-radius: 4px;
-                margin-right: auto;
-                margin-left: auto;
-        }
-    
+  //desctop screen (>1200px)
+  @media screen and (min-width: 1200px) {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    min-width: 575px;
+    margin-bottom: 34px;
+    border-radius: 4px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 
-    &__item {
-        //phone screen(<768px)
-        
-        
-            //tablet screen (>768px )
-            @media screen and (min-width: 768px),
-            (max-width: 1199.98) {}
-        
-            //desctop screen (>1200px)
-            @media screen and (min-width: 1200px) {}
-    
-            background-color: $button-portfolio;
-            border-radius: 4px;
-            margin-left: 8px;
-    
-            &:hover,
-            &:focus {
-                color: $primary-bg-color;
-                background-color: $accent-color;
-                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-            }
-    
-        }
+  &__item {
+    //phone screen(<768px)
+
+    //tablet screen (>768px )
+    @media screen and (min-width: 768px), (max-width: 1199.98) {
+    }
+
+    //desctop screen (>1200px)
+    @media screen and (min-width: 1200px) {
+    }
+
+    background-color: $button-portfolio;
+    border-radius: 4px;
+    margin-left: 8px;
+
+    &:hover,
+    &:focus {
+      color: $primary-bg-color;
+      background-color: $accent-color;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+  }
 }
-
 
 .portfolio {
-    //phone screen(<768px)
-    display: block;
-    
-    
-        //tablet screen (>768px )
-        @media screen and (min-width: 768px),
-        (max-width: 1199.98) {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 30px;
-            justify-content: space-between;
-            width: 738px;
+  //phone screen(<768px)
+  display: block;
 
-        }
-    
-        //desctop screen (>1200px)
-        @media screen and (min-width: 1200px) {
-            display: flex;
-                flex-wrap: wrap;
-                gap: 30px;
-                width: 1170px;
-                
-        }
-    
+  //tablet screen (>768px )
+  @media screen and (min-width: 768px), (max-width: 1199.98) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+  }
 
+  //desctop screen (>1200px)
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
 }
 
-.portfolio__item{
-    
-    //phone screen(<768px)
-    margin-bottom: 30px;
-    
-    
-    
-    
-        //tablet screen (>768px )
-        @media screen and (min-width: 768px),
-        (max-width: 1199.98) {
-            margin-bottom: 0px;
-            width: 354px;
-        }
-    
-        //desctop screen (>1200px)
-        @media screen and (min-width: 1200px) {
-            margin-bottom: 0px;
-            width: auto;
-            
-            
-        }
+.portfolio__item {
+  //phone screen(<768px)
+  margin-bottom: 30px;
+
+  //tablet screen (>768px )
+  @media screen and (min-width: 768px), (max-width: 1199.98) {
+    margin-bottom: 0px;
+    width: 354px;
+  }
+
+  //desctop screen (>1200px)
+  @media screen and (min-width: 1200px) {
+    width: 370px;
+  }
 }
 .portfolio__item:hover,
 .portfolio__item:focus {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-
 
 .portfolio__link {
-    //phone screen(<768px)
-    
-    
-        //tablet screen (>768px )
-        @media screen and (min-width: 768px),
-        (max-width: 1199.98) {}
-    
-        //desctop screen (>1200px)
-        @media screen and (min-width: 1200px) {}
-    display: block;
+  //phone screen(<768px)
 
-    transition-property: box-shadow;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  //tablet screen (>768px )
+  @media screen and (min-width: 768px), (max-width: 1199.98) {
+  }
 
-    
+  //desctop screen (>1200px)
+  @media screen and (min-width: 1200px) {
+  }
+  display: block;
 
-
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 
 .portfolio__before-text-portfolio {
-    //phone screen(<768px)
-    
-    
-        //tablet screen (>768px )
-        @media screen and (min-width: 768px),
-        (max-width: 1199.98) {}
-    
-        //desctop screen (>1200px)
-        @media screen and (min-width: 1200px) {}
-    position: relative;
-    overflow: hidden;
+  //phone screen(<768px)
 
+  //tablet screen (>768px )
+  @media screen and (min-width: 768px), (max-width: 1199.98) {
+  }
+
+  //desctop screen (>1200px)
+  @media screen and (min-width: 1200px) {
+  }
+  position: relative;
+  overflow: hidden;
 }
 
-
-
 .portfolio__text-hover-portfolio {
-    //phone screen(<768px)
-    
-    
-        //tablet screen (>768px )
-        @media screen and (min-width: 768px),
-        (max-width: 1199.98) {}
-    
-        //desctop screen (>1200px)
-        @media screen and (min-width: 1200px) {}
-    display: flex;
-    align-items: center;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 90;
-    transform: translateY(100%);
+  //phone screen(<768px)
 
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    background-color: rgba(33, 150, 243, 0.9);
-    padding: 63px 24px;
+  //tablet screen (>768px )
+  @media screen and (min-width: 768px), (max-width: 1199.98) {
+  }
 
+  //desctop screen (>1200px)
+  @media screen and (min-width: 1200px) {
+  }
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 90;
+  transform: translateY(100%);
 
-
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: rgba(33, 150, 243, 0.9);
+  padding: 63px 24px;
 }
 
 .portfolio__link:hover .portfolio__text-hover-portfolio {
-    transform: translateY(0);
-    overflow: visible;
+  transform: translateY(0);
+  overflow: visible;
 }
 
 .portfolio__link:focus .portfolio__text-hover-portfolio {
-    transform: translateY(0);
-    overflow: visible;
+  transform: translateY(0);
+  overflow: visible;
 }
-
-
-
 
 .portfolio__p-text-hover-portfolio {
-    //phone screen(<768px)
-    
-    
-        //tablet screen (>768px )
-        @media screen and (min-width: 768px),
-        (max-width: 1199.98) {}
-    
-        //desctop screen (>1200px)
-        @media screen and (min-width: 1200px) {}
-    font-size: 18px;
-    letter-spacing: 0.03em;
-    line-height: calc(28 / 18);
-    color: $primary-bg-color;
+  //phone screen(<768px)
 
+  //tablet screen (>768px )
+  @media screen and (min-width: 768px), (max-width: 1199.98) {
+  }
 
+  //desctop screen (>1200px)
+  @media screen and (min-width: 1200px) {
+  }
+  font-size: 18px;
+  letter-spacing: 0.03em;
+  line-height: calc(28 / 18);
+  color: $primary-bg-color;
 }
 
-
 .portfolio__section-title-portfolio {
-    //phone screen(<768px)
-    
-    
-        //tablet screen (>768px )
-        @media screen and (min-width: 768px),
-        (max-width: 1199.98) {}
-    
-        //desctop screen (>1200px)
-        @media screen and (min-width: 1200px) {}
-    font-size: 18px;
-    color: $primary-text-color;
-    letter-spacing: 0.06em;
-    line-height: 2;
-    margin-bottom: 4px;
+  //phone screen(<768px)
+
+  //tablet screen (>768px )
+  @media screen and (min-width: 768px), (max-width: 1199.98) {
+  }
+
+  //desctop screen (>1200px)
+  @media screen and (min-width: 1200px) {
+  }
+  font-size: 18px;
+  color: $primary-text-color;
+  letter-spacing: 0.06em;
+  line-height: 2;
+  margin-bottom: 4px;
 }
 
 .portfolio__text {
-    //phone screen(<768px)
-    
-    
-        //tablet screen (>768px )
-        @media screen and (min-width: 768px),
-        (max-width: 1199.98) {}
-    
-        //desctop screen (>1200px)
-        @media screen and (min-width: 1200px) {}
-    font-size: 16px;
-    color: $text-portfolio-team;
-    letter-spacing: 0.03em;
-    line-height: 1.87;
+  //phone screen(<768px)
 
+  //tablet screen (>768px )
+  @media screen and (min-width: 768px), (max-width: 1199.98) {
+  }
+
+  //desctop screen (>1200px)
+  @media screen and (min-width: 1200px) {
+  }
+  font-size: 16px;
+  color: $text-portfolio-team;
+  letter-spacing: 0.03em;
+  line-height: 1.87;
 }
 
 .portfolio__link {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .portfolio__text-portfolio-box {
-    //phone screen(<768px)
-    padding:  20px 24px 20px 24px;
-        border-left: 1px solid #EEEEEE;
-        border-right: 1px solid #EEEEEE;
-        border-bottom: 1px solid #EEEEEE;
-    
-        //tablet screen (>768px )
-        @media screen and (min-width: 768px),
-        (max-width: 1199.98) {
-            padding: 20px 24px 20px 24px;
-                border-left: 1px solid #EEEEEE;
-                border-right: 1px solid #EEEEEE;
-                border-bottom: 1px solid #EEEEEE;
-        
-        }
-    
-        //desctop screen (>1200px)
-        @media screen and (min-width: 1200px) {
-            padding: 20px 24px 20px 24px;
-                border-left: 1px solid #EEEEEE;
-                border-right: 1px solid #EEEEEE;
-                border-bottom: 1px solid #EEEEEE;
-        }
+  //phone screen(<768px)
+  padding: 20px 24px 20px 24px;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
 
-    
+  //tablet screen (>768px )
+  @media screen and (min-width: 768px), (max-width: 1199.98) {
+    padding: 20px 24px 20px 24px;
+    border-left: 1px solid #eeeeee;
+    border-right: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+  }
 
-
+  //desctop screen (>1200px)
+  @media screen and (min-width: 1200px) {
+    padding: 20px 24px 20px 24px;
+    border-left: 1px solid #eeeeee;
+    border-right: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+  }
 }

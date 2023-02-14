@@ -36,7 +36,7 @@
             //tablet screen (>768px )
             @media screen and (min-width: 768px),
                 (max-width: 1199.98){
-                    width: 354px;
+                    width: calc((100% - 30px * 1) / 2);
                     
                     margin-bottom: 0px;
                     
@@ -45,7 +45,8 @@
         
             //desctop screen (>1200px)
             @media screen and (min-width: 1200px){
-                width: 270px;
+                width: calc((100% - 30px *3)/4);
+                
                 margin-bottom: 0px;
 
             }

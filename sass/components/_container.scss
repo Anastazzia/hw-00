@@ -1,62 +1,38 @@
 //phone screen(<768px)
-@media screen and (max-width: 764px){
-
+@media screen and (max-width: 764px) {
 }
 
 //tablet screen (>768px )
-@media screen and (min-width: 768px),
-(max-width: 1199.98) {}
-
-//desctop screen (>1200px)
-@media screen and (min-width: 1200px){
-
+@media screen and (min-width: 768px), (max-width: 1199.98) {
 }
 
-
-
-
+//desctop screen (>1200px)
+@media screen and (min-width: 1200px) {
+}
 
 .container {
+  //phone screen(<768px)
+  min-width: 320px;
+  max-width: 480px;
 
-    //phone screen(<768px)
-    @media screen and (max-width: 764px){
-    min-width: 320px;
-    max-width: 480px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
 
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-top: 0px;
-        margin-right: auto;
-        margin-bottom: 0px;
-        margin-left: auto;
-    }
+  //tablet screen (>768px )
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
 
-    //tablet screen (>768px )
-    @media screen and (min-width: 768px), (max-width: 1199.98) {
-        max-width: 768px;
-        margin-top: 0px;
-            margin-right: auto;
-            margin-bottom: 0px;
-            margin-left: auto;
-        
-        
-    }
+  //desctop screen (>1200px)
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+  }
 
-    //desctop screen (>1200px)
-    @media screen and (min-width: 1200px) {
-            max-width: 1200px;
-                margin-top: 0px;
-                    margin-right: auto;
-                    margin-bottom: 0px;
-                    margin-left: auto;
-    
-        }
-
-    /*
+  /*
     width: 1200px;
     */
 
-    outline: 2px solid red;
-    
+  outline: 2px solid red;
 }
-

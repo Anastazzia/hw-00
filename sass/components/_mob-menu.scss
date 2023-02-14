@@ -1,299 +1,210 @@
-
-
 .menu-toggle {
-    min-height: 40px;
-    min-width: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  min-height: 40px;
+  min-width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    margin: 0;
-    padding: 0;
-    background-color: transparent;
-    cursor: pointer;
-    border: none;
-    border-radius: 50%;
-    outline: none;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
 
-    //tablet screen (>768px )
-        @media screen and (min-width: 768px),
-        (max-width: 1199.98) {
-            display: none;
-        }
-    
-        //desctop screen (>1200px)
-        @media screen and (min-width: 1200px) {
-            display: none;
-        }
+  //tablet screen (>768px )
+  @media screen and (min-width: 768px), (max-width: 1199.98) {
+    display: none;
+  }
+
+  //desctop screen (>1200px)
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
 }
 
 @media (min-width: 768px) {
-    
-    .menu-toggle {
-        display: none;
-    }
-
-    
+  .menu-toggle {
+    display: none;
+  }
 }
 
 .menu-toggle:hover .menu-toggle-icon,
-.menu-toggle:focus .menu-toggle-icon{
-    fill: $accent-color;
+.menu-toggle:focus .menu-toggle-icon {
+  fill: $accent-color;
 }
 
 ////
 
 .menu-container {
-    //tablet screen (>768px )
-        @media screen and (min-width: 768px),
-        (max-width: 1199.98) {
-            display: none;
-        }
-    
-        //desctop screen (>1200px)
-        @media screen and (min-width: 1200px) {
-            display: none;
-        }
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    padding: 32px;
-    background-color: $primary-bg-color;//$primary-bg-color
-    z-index: 999;
+  //tablet screen (>768px )
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 
-    transform: translateX(100%);
-    transition: transform 250ms ease-in-out;
+  display: flex;
+
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 32px;
+  background-color: $primary-bg-color; //$primary-bg-color
+  z-index: 999;
+
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
 }
 
 .menu-container.is-open {
-    //tablet screen (>768px )
-        @media screen and (min-width: 768px),
-        (max-width: 1199.98) {
-            display: none;
-        }
-    
-        //desctop screen (>1200px)
-        @media screen and (min-width: 1200px) {
-            display: none;
-        }
-    transform: translateX(0);
+  //tablet screen (>768px )
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+  transform: translateX(0);
 }
 
 .menu-container .menu-toggle {
-    //tablet screen (>768px )
-        @media screen and (min-width: 768px),
-        (max-width: 1199.98) {
-            display: none;
-        }
-    
-        //desctop screen (>1200px)
-        @media screen and (min-width: 1200px) {
-            display: none;
-        }
-    position: absolute;
-    top: 16px;
-    right: 16px;
-    color: $primary-text-color;
+  //tablet screen (>768px )
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  color: $primary-text-color;
 }
 
 .mobile-menu {
-    //tablet screen (>768px )
-        @media screen and (min-width: 768px),
-        (max-width: 1199.98) {
-            display: none;
-        }
-    
-        //desctop screen (>1200px)
-        @media screen and (min-width: 1200px) {
-            display: none;
-        }
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    margin-bottom: 292px;
+  //tablet screen (>768px )
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
-.menu-container .mobile-menu .current-menu{
-    //tablet screen (>768px )
-        @media screen and (min-width: 768px),
-        (max-width: 1199.98) {
-            display: none;
-        }
-    
-        //desctop screen (>1200px)
-        @media screen and (min-width: 1200px) {
-            display: none;
-        }
-    color: $accent-color;
+.menu-container .mobile-menu .current-menu {
+  //tablet screen (>768px )
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+  color: $accent-color;
 }
 
-.mobile-contacts__item{
-    //tablet screen (>768px )
-        @media screen and (min-width: 768px),
-        (max-width: 1199.98) {
-            display: none;
-        }
-    
-        //desctop screen (>1200px)
-        @media screen and (min-width: 1200px) {
-            display: none;
-        }
-margin-bottom: 32px;
+.mobile-contacts__item {
+  //tablet screen (>768px )
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+
+  margin-bottom: 32px;
 }
 
-.menu-number{
-    //tablet screen (>768px )
-        @media screen and (min-width: 768px),
-        (max-width: 1199.98) {
-            display: none;
-        }
-    
-        //desctop screen (>1200px)
-        @media screen and (min-width: 1200px) {
-            display: none;
-        }
-    font-family: "Roboto", sans-serif;
-    color: $accent-color;
-    font-weight: 500;
-        font-size: 34px;
-        line-height: calc( 40/34 );
-        letter-spacing: 0.02em;
-        
+.menu-number {
+  //tablet screen (>768px )
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+
+  font-family: "Roboto", sans-serif;
+  color: $accent-color;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: calc(40 / 34);
+  letter-spacing: 0.02em;
 }
 
-.menu-mail{
-    //tablet screen (>768px )
-        @media screen and (min-width: 768px),
-        (max-width: 1199.98) {
-            display: none;
-        }
-    
-        //desctop screen (>1200px)
-        @media screen and (min-width: 1200px) {
-            display: none;
-        }
-    font-family: "Roboto", sans-serif;
-    color: $text-color;
-    font-weight: 500;
-        font-size: 24px;
-        line-height: calc( 28/24 );
-        letter-spacing: 0.02em;
-        
+.menu-mail {
+  //tablet screen (>768px )
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+  font-family: "Roboto", sans-serif;
+  color: $text-color;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: calc(28 / 24);
+  letter-spacing: 0.02em;
 }
 
 .mobile-menu .link {
-    //tablet screen (>768px )
-        @media screen and (min-width: 768px),
-        (max-width: 1199.98) {
-            display: none;
-        }
-    
-        //desctop screen (>1200px)
-        @media screen and (min-width: 1200px) {
-            display: none;
-        }
-    display: block;
-    padding: 10px;
-    color: $primary-text-color;
-    text-decoration: none;
-    
-
+  //tablet screen (>768px )
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+  display: block;
+  padding: 10px;
+  color: $primary-text-color;
+  text-decoration: none;
 }
 
-.link{
-    //tablet screen (>768px )
-        @media screen and (min-width: 768px),
-        (max-width: 1199.98) {
-            display: none;
-        }
-    
-        //desctop screen (>1200px)
-        @media screen and (min-width: 1200px) {
-            display: none;
-        }
-    font-family: "Roboto", sans-serif;
-    font-size: 40px;
-    font-weight: 500;
-    line-height: calc( 47/40 );
-    letter-spacing: 0.02em;
-    &:not(:last-child){
+.link {
+  //tablet screen (>768px )
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+  font-family: "Roboto", sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: calc(47 / 40);
+  letter-spacing: 0.02em;
+  &:not(:last-child) {
     margin-bottom: 32px;
-    }  
+  }
 
-    &:hover,
-    &:focus{
-        color: $accent-color;
-    }
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }
 
-.mobile-contacts{
-    //tablet screen (>768px )
-        @media screen and (min-width: 768px),
-        (max-width: 1199.98) {
-            display: none;
-        }
-    
-        //desctop screen (>1200px)
-        @media screen and (min-width: 1200px) {
-            display: none;
-        }
-    margin-bottom: 64px;
+.mobile-contacts {
+  //tablet screen (>768px )
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+  margin-bottom: 64px;
 }
 
-
-.mobile-socials{
-    //tablet screen (>768px )
-        @media screen and (min-width: 768px),
-        (max-width: 1199.98) {
-            display: none;
-        }
-    
-        //desctop screen (>1200px)
-        @media screen and (min-width: 1200px) {
-            display: none;
-        }
-    display: flex;
-
+.mobile-socials {
+  //tablet screen (>768px )
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+  display: flex;
 }
 
-.mobil-socials__item{
-    //tablet screen (>768px )
-        @media screen and (min-width: 768px),
-        (max-width: 1199.98) {
-            display: none;
-        }
-    
-        //desctop screen (>1200px)
-        @media screen and (min-width: 1200px) {
-            display: none;
-        }
-    padding-right: 10px;
-    &:not(:first-child){
-        padding-left: 10px;
-    }
-    &:not(:last-child){
-        border-right: 1px solid rgba(33, 33, 33, 0.2);
-            
-    }
-
+.mobil-socials__item {
+  //tablet screen (>768px )
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+  padding-right: 10px;
+  &:not(:first-child) {
+    padding-left: 10px;
+  }
+  &:not(:last-child) {
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+  }
 }
 
-.mobil-socials__link{
-    //tablet screen (>768px )
-        @media screen and (min-width: 768px),
-        (max-width: 1199.98) {
-            display: none;
-        }
-    
-        //desctop screen (>1200px)
-        @media screen and (min-width: 1200px) {
-            display: none;
-        }
+.mobil-socials__link {
+  //tablet screen (>768px )
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 320px), (max-width: 480px) {
     color: $accent-color;
     font-weight: 500;
-        font-size: 18px;
-        line-height: calc( 22/18 );
-        letter-spacing: 0.02em;
+    font-size: 18px;
+    line-height: calc(22 / 18);
+    letter-spacing: 0.02em;
+  }
 }
