@@ -1,63 +1,181 @@
 .section-hero {
-    padding-top: 200px;
-    padding-bottom: 200px;
-
+    //phone screen(<768px)
     color: $primary-bg-color;
-    background-color: $bg-color;
-    letter-spacing: 0.06em;
-    text-align: center;
+        background-color: $bg-color;
+        text-align: center;
+        padding-top: 118px;
+        padding-bottom: 118px;
+        margin-left: auto;
+            margin-right: auto;
+            background-size: cover;
+        
+    
+        //tablet screen (>768px )
+        @media screen and (min-width: 768px),
+        (max-width: 1199.98) {
+            
+            padding-top: 118px;
+            padding-bottom: 118px;
+            text-align: center;
+            margin-left: auto;
+                margin-right: auto;
+                background-size: cover;
+        }
+    
+        //desctop screen (>1200px)
+        @media screen and (min-width: 1200px) {
+            
+                padding-top: 200px;
+                padding-bottom: 200px;
+                letter-spacing: 0.06em;
+                text-align: center;
+                
+                margin-left: auto;
+                    margin-right: auto;
+                    background-size: cover;
 
-    background-image: url(../images/hero-bg.jpg);
+                
+        }
+    
 
 }
 
 .bg-img-hero {
-    width: 1600px;
-    height: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    background-repeat: no-repeat;
+    //phone screen(<768px)
+    
+    
+        background-size: cover;
+        margin-left: auto;
+            margin-right: auto;
+            background-repeat: no-repeat;
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                        rgba(47, 48, 58, 0.4)), url(../../images/mobile/hero-320.png);
 
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)), url(../images/hero-bg.jpg);
+                        @media screen and (min-device-pixel-ratio: 2),
+                            (min-resolution: 192dpi),
+                            (min-resolution: 2dppx) {
+                                .box {
+                                    background-image: url('../../images/mobile/hero-320@2x.png');
+                                }
+                            }
+            
+    
+        //tablet screen (>768px )
+        @media screen and (min-width: 481px) {
+            background-size: cover;
+            
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                        rgba(47, 48, 58, 0.4)), url(../../images/tablet/bg768.png);
+                        @media screen and (min-device-pixel-ratio: 2),
+                            (min-resolution: 192dpi),
+                            (min-resolution: 2dppx) {
+                                .box {
+                                    background-image: url('../../images/tablet/bg768@2x.png');
+                                }
+                            }
+        }
+    
+        //desctop screen (>1200px)
+        @media screen and (min-width: 769px) {
+            
+            height: 600px;
+                margin-left: auto;
+                margin-right: auto;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                        rgba(47, 48, 58, 0.4)), url(../../images/Imgbg.png);
 
+                        @media screen and (min-device-pixel-ratio: 2),
+                            (min-resolution: 192dpi),
+                            (min-resolution: 2dppx) {
+                                .box {
+                                    background-image: url('../../images/Imgbg@2x.png');
+                                }
+                            }
+        }
+    
 
 }
 
 .hero {
-    padding-top: 0px;
-    padding-bottom: 0px;
+    //phone screen(<768px)
+    
+    
+    
+    
+        //tablet screen (>768px )
+        @media screen and (min-width: 768px),
+        (max-width: 1199.98) {}
+    
+        //desctop screen (>1200px)
+        @media screen and (min-width: 1200px) {
+            
+            
+        }
+    
 
     &__title {
-            font-size: 44px;
-            line-height: 1.36;
-            letter-spacing: 0.06em;
+        //phone screen(<768px)
+        font-weight: 900;
+        letter-spacing: 0.06em;
             text-transform: uppercase;
-            font-weight: 900;
+            font-size: 26px;
+            text-align: center;
             margin-bottom: 30px;
+        
+        
+            //tablet screen (>768px )
+            @media screen and (min-width: 768px),
+            (max-width: 1199.98) {}
+        
+            //desctop screen (>1200px)
+            @media screen and (min-width: 1200px) {
+                font-size: 44px;
+                    line-height: 1.36;
+                
+            }
+            
         }
 
         &__button {
+            //phone screen(<768px)
             font-size: 16px;
+            line-height: calc(30/16);
             font-family: inherit;
             cursor: pointer;
             letter-spacing: 0.06em;
-            line-height: 30px;
             font-weight: 700;
-            color: $primary-bg-color;
-            background-color: $accent-color;
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-            padding: 10px 32px 10px 32px;
-            border-radius: 4px;
-        
+            
+            
+
+                color: $primary-bg-color;
+                background-color: $accent-color;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+                border-radius: 4px;
+                padding: 10px 24px;
+
             transition-property: background-color;
             transition-duration: 250ms;
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        
+
             &:hover,
             &:focus {
-                color: $primary-bg-color;
-                background-color: $bg-button;
+                    color: $primary-bg-color;
+                    background-color: $bg-button;
+            
+            
+                //tablet screen (>768px )
+                @media screen and (min-width: 768px),
+                (max-width: 1199.98) {}
+            
+                //desctop screen (>1200px)
+                @media screen and (min-width: 1200px) {
+                        padding: 10px 32px;
+                        
+                }
+            
         
             }
         

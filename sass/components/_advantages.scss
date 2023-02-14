@@ -1,70 +1,279 @@
 .advantages {
-    display: flex;
+
+    //phone screen(<768px)
+    display: block;
+    
+     //tablet screen (>768px )
+    @media screen and (min-width: 768px),
+        (max-width: 1199.98) {
+            width: 738px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+    
+    //desctop screen (>1200px)
+                @media screen and (min-width: 1200px){
+            display: flex;
+                flex-wrap: nowrap;
+                    gap: 30px;
+                    
+            
+        }
+
+    //display: flex;
 
     &__title {
+    //phone screen(<768px)
+    color: $primary-text-color;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        margin-bottom: 10px;
+        text-align: center;
+    //tablet screen (>768px )
+    @media screen and (min-width: 768px),
+        (max-width: 1199.98){
+    
     color: $primary-text-color;
     font-size: 14px;
-    letter-spacing: 0.03em;
     line-height: 1.14;
+    letter-spacing: 0.03em;
     margin-bottom: 10px;
+    text-align: start;
+        }
+    
+    //desctop screen (>1200px)
+        @media screen and (min-width: 1200px){
+            font-size: 14px;
+                line-height: 1.14;
+                letter-spacing: 0.03em;
+                margin-bottom: 10px;
+                text-align: start;
+        }
+    
+
     }
 
+&__item{
+    
+    //phone screen(<768px)
+        display: block;
+            align-items: center;
+    
+        //tablet screen (>768px )
+        @media screen and (min-width: 768px),
+            (max-width: 1199.98){
+                display: block;
+                width: 354px;
+                height: 228px;
+            }
+    
+        //desctop screen (>1200px)
+                @media screen and (min-width: 1200px){
+            display: inline-block;
+            margin-bottom: 30px;
+
+        }
+}
+
 &__item:not(:last-child) {
-    margin-right: 30px;
+
+        //phone screen(<768px)
+        margin-bottom: 30px;
+    
+        //tablet screen (>768px )
+        @media screen and (min-width: 768px),
+            (max-width: 1199.98){
+                margin-bottom: 0px;
+
+            }
+    
+        //desctop screen (>1200px)
+    
+    //margin-right: 30px;
 }
 &__text {
+    //phone screen(<768px)
+    //tablet screen (>768px )
+     //desctop screen (>1200px)
     color: $text-color;
     font-size: 14px;
     letter-spacing: 0.03em;
     line-height: 1.71;
+
 }
 }
 
 
 .antenna::before {
+
+    //phone screen(<768px)
     display: block;
     content: "";
-    width: 270px;
     height: 120px;
     margin-bottom: 30px;
     background-color: $team-bg;
     background-image: url(../images/decorations/antenna.svg);
     background-repeat: no-repeat;
-    background-position: center
+    background-position: center;
+    
+        
+    
+        //tablet screen (>768px )
+        @media screen and (min-width: 768px),
+            (max-width: 1199.98){
+                display: block;
+                content: "";
+                width: 354px;
+                height: 120px;
+                margin-bottom: 30px;
+                background-image: url(../images/decorations/antenna.svg);
+                background-color: $team-bg;
+                background-position: center;
+                background-repeat: no-repeat;
+                
+
+            }
+    
+        //desctop screen (>1200px)
+        @media screen and (min-width: 1200px) {
+            display: block;
+                content: "";
+                width: 270px;
+                height: 120px;
+                margin-bottom: 30px;
+                background-image: url(../images/decorations/antenna.svg);
+                background-color: $team-bg;
+                background-position: center ;
+                background-repeat: no-repeat;
+        
+            }
+    
 }
 
 .clock::before {
+
+    //phone screen(<768px)
     display: block;
-    content: "";
-    width: 270px;
-    height: 120px;
-    margin-bottom: 30px;
-    background-color: $team-bg;
-    background-image: url(../images/decorations/clock.svg);
-    background-repeat: no-repeat;
-    background-position: center
+        content: "";
+        
+        height: 120px;
+        margin-bottom: 30px;
+        background-color: $team-bg;
+        background-image: url(../images/decorations/clock.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+    
+        //tablet screen (>768px )
+        @media screen and (min-width: 768px),
+            (max-width: 1199.98){
+                display: block;
+                    content: "";
+                    width: 354px;
+                    height: 120px;
+                    margin-bottom: 30px;
+                    background-color: $team-bg;
+                    background-image: url(../images/decorations/clock.svg);
+                    background-repeat: no-repeat;
+                    background-position: center;
+
+            }
+    
+        //desctop screen (>1200px)
+        @media screen and (min-width: 1200px) {
+            display: inline-block;
+                content: "";
+                width: 270px;
+                height: 120px;
+                margin-bottom: 30px;
+                background-color: $team-bg;
+                background-image: url(../images/decorations/clock.svg);
+                background-repeat: no-repeat;
+                background-position: center;
+        }
+    
 }
 
 .diagram::before {
+    /*phone screen(<768px)*/
     display: block;
-    content: "";
-    width: 270px;
-    height: 120px;
-    margin-bottom: 30px;
-    background-color: $team-bg;
-    background-image: url(../images/decorations/diagram.svg);
-    background-repeat: no-repeat;
-    background-position: center
+        content: "";
+        
+        height: 120px;
+        margin-bottom: 30px;
+        background-color: $team-bg;
+        background-image: url(../images/decorations/diagram.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+    
+        //tablet screen (>768px )
+        @media screen and (min-width: 768px),
+        (max-width: 1199.98){
+            display: block;
+                content: "";
+                width: 354px;
+                height: 120px;
+                margin-bottom: 30px;
+                background-color: $team-bg;
+                background-image: url(../images/decorations/diagram.svg);
+                background-repeat: no-repeat;
+                background-position: center
+
+        }
+        //desctop screen (>1200px)
+        @media screen and (min-width: 1200px) {
+            display: inline-block;
+            content: "";
+            width: 270px;
+            height: 120px;
+            margin-bottom: 30px;
+            background-color: $team-bg;
+            background-image: url(../images/decorations/diagram.svg);
+            background-repeat: no-repeat;
+            background-position: center
+        }
+    
 }
 
 .astronaut::before {
+    //phone screen(<768px)
     display: block;
-    content: "";
-    width: 270px;
-    height: 120px;
-    margin-bottom: 30px;
-    background-color: $team-bg;
-    background-image: url(../images/decorations/astronaut.svg);
-    background-repeat: no-repeat;
-    background-position: center
+        content: "";
+        
+        height: 120px;
+        margin-bottom: 30px;
+        background-color: $team-bg;
+        background-image: url(../images/decorations/astronaut.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+    
+        //tablet screen (>768px )
+        @media screen and (min-width: 768px),
+            (max-width: 1199.98) {
+                display: block;
+                    content: "";
+                    width: 354px;
+                    height: 120px;
+                    margin-bottom: 30px;
+                    background-color: $team-bg;
+                    background-image: url(../images/decorations/astronaut.svg);
+                    background-repeat: no-repeat;
+                    background-position: center;
+            }
+    
+        //desctop screen (>1200px)
+        @media screen and (min-width: 1200px){
+            display: inline-block;
+                content: "";
+                width: 270px;
+                height: 120px;
+                margin-bottom: 30px;
+                background-color: $team-bg;
+                background-image: url(../images/decorations/astronaut.svg);
+                background-repeat: no-repeat;
+                background-position: center;
+        }
+    
 }

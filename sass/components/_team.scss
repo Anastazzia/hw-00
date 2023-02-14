@@ -1,52 +1,157 @@
 .section-team {
     background-color: $team-bg;
+    width: 100%;
 }
 
 /*team-box*/
 .team {
-    display: flex;
+    //phone screen(<768px)
+    display: block;
+    
+        //tablet screen (>768px )
+        @media screen and (min-width: 768px),
+            (max-width: 1199.98){
+                display: flex;
+                flex-wrap: wrap;
+                gap: 30px;
+                
+            }
+    
+        //desctop screen (>1200px)
+        @media screen and (min-width: 1200px){
+        display: flex;
+        }
+    
 
     &__item {
-            background-color: #FFFFFF;
+        //phone screen(<768px)
+        background-color: #FFFFFF;
             text-align: center;
             box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
             border-radius: 0px 0px 4px 4px;
+            margin-bottom: 30px;
+            margin-left: 0px;
+            max-width: 450px;
+        
+            //tablet screen (>768px )
+            @media screen and (min-width: 768px),
+                (max-width: 1199.98){
+                    width: 354px;
+                    
+                    margin-bottom: 0px;
+                    
+                    
+                }
+        
+            //desctop screen (>1200px)
+            @media screen and (min-width: 1200px){
+                width: 270px;
+                margin-bottom: 0px;
+
+            }
+            
         }
 
     &__item:not(:last-child) {
-            margin-right: 30px;
+        //phone screen(<768px)
+        margin-right: 0px;
+        
+            //tablet screen (>768px )
+            @media screen and (min-width: 768px),
+                (max-width: 1199.98){
+                    margin-right: 0px;
+                }
+        
+            //desctop screen (>1200px)
+            @media screen and (min-width: 1200px){
+                    margin-right: 0px;
+}
+            
         }
+}
+.team__img{
+    //phone screen(<768px)
+    
+    //tablet screen (>768px )
+    @media screen and (min-width: 768px),
+        (max-width: 1199.98){
+            //width: 354px;
+            //height: 360px;
+        }
+    
+    //desctop screen (>1200px)
+    @media screen and (min-width: 1200px){
+        width: 270px;
+        height: 260px;
+    }
 }
 
 
 
 .team-personality__text {
+    //phone screen(<768px)
     padding-top: 30px;
     padding-bottom: 0px;
 
-    &__title {
-            font-size: 16px;
-            letter-spacing: 0.03em;
-            font-weight: 500;
-            margin-bottom: 10px;
-        }
+    
+        //tablet screen (>768px )
+    
+        //desctop screen (>1200px)
+    
+}
 
-        &__speciality {
-            font-size: 16px;
-            color: $text-portfolio-team;
-            letter-spacing: 0.03em;
-            letter-spacing: 0.03em;
-        }
+.team-personality__speciality {
+    //phone screen(<768px)
+    font-size: 16px;
+    color: $text-portfolio-team;
+    letter-spacing: 0.03em;
+    line-height: calc(19/16);
+    color: $text-color;
+
+    @media screen and (min-width: 768px),
+    (max-width: 1199.98) {
+        //width: 354px;
+        //height: 360px;
+    }
+
+    //desctop screen (>1200px)
+    @media screen and (min-width: 1200px) {}
+
+}
+.team-personality__title {
+    //phone screen(<768px)
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    line-height: 1.1875;
+    margin-bottom: 10px;
+
+    //tablet screen (>768px )
+
+    //desctop screen (>1200px)
+
 }
 
 
 /*section-title-main-team*/
 .team-main-title {
-    font-size: 36px;
-    letter-spacing: 0.06em;
-    line-height: 1.16;
+    //phone screen(<768px)
     text-align: center;
-    margin-bottom: 50px;
+        letter-spacing: 0.03em;
+        font-size: 28px;
+        line-height: calc(33/28);
+        margin-bottom: 30px;
+    
+        //tablet screen (>768px )
+        
+        //desctop screen (>1200px)
+        @media screen and (min-width: 1200px){
+            font-size: 36px;
+                letter-spacing: 0.06em;
+                line-height: 1.16;
+                margin-bottom: 50px;
+        }
+    
 }
 
 
@@ -54,16 +159,31 @@
 
 
 .socials {
+    //phone screen(<768px)
+    
+        //tablet screen (>768px )
+    
+        //desctop screen (>1200px)
     display: flex;
     justify-content: center;
     padding-top: 16px;
     padding-bottom: 30px;
 
     &__icons:not(:last-child) {
+        //phone screen(<768px)
+        
+            //tablet screen (>768px )
+        
+            //desctop screen (>1200px)
             margin-right: 10px;
         }
 
         &__link {
+            //phone screen(<768px)
+            
+                //tablet screen (>768px )
+            
+                //desctop screen (>1200px)
             display: flex;
             width: 44px;
             height: 44px;
@@ -83,6 +203,11 @@
         }
 
         &__link:not(:last-child) {
+            //phone screen(<768px)
+            
+                //tablet screen (>768px )
+            
+                //desctop screen (>1200px)
             margin-right: 10px;
         }
 }

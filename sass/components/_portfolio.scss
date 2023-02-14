@@ -1,36 +1,83 @@
 
 
 .pointer {
+    //phone screen(<768px)
     cursor: pointer;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    letter-spacing: 0.03em;
-    line-height: 1.62;
-    font-size: 16px;
-
-    padding-top: 6px;
-    padding-bottom: 6px;
-    padding-left: 22px;
-    padding-right: 22px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        letter-spacing: 0.03em;
+        line-height: 1.62;
+        font-size: 16px;
 
     transition-property: background-color, box-shadow, color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        padding: 6px 22px;
+    
+    
+        //tablet screen (>768px )
+        @media screen and (min-width: 768px),
+        (max-width: 1199.98) {}
+    
+        //desctop screen (>1200px)
+        @media screen and (min-width: 1200px) {
 
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+                padding-top: 6px;
+                padding-bottom: 6px;
+                padding-left: 22px;
+                padding-right: 22px;
+        }
+    
 
+    
 }
 
 .portfolio-button {
-    text-align: center;
+    //phone screen(<768px)
     display: flex;
-    justify-content: center;
-    min-width: 575px;
-    margin-bottom: 34px;
-    border-radius: 4px;
-    margin-right: auto;
-    margin-left: auto;
+    align-items: start;
+    margin-bottom: 40px;
+    
+
+    
+    
+        //tablet screen (>768px )
+        @media screen and (min-width: 768px),
+        (max-width: 1199.98) {
+            margin-bottom: 30px;
+            text-align: center;
+                display: flex;
+                justify-content: center;
+                min-width: 575px;
+                margin-bottom: 34px;
+                border-radius: 4px;
+                margin-right: auto;
+                margin-left: auto;
+        }
+    
+        //desctop screen (>1200px)
+        @media screen and (min-width: 1200px) {
+            text-align: center;
+                display: flex;
+                justify-content: center;
+                min-width: 575px;
+                margin-bottom: 34px;
+                border-radius: 4px;
+                margin-right: auto;
+                margin-left: auto;
+        }
+    
 
     &__item {
+        //phone screen(<768px)
+        
+        
+            //tablet screen (>768px )
+            @media screen and (min-width: 768px),
+            (max-width: 1199.98) {}
+        
+            //desctop screen (>1200px)
+            @media screen and (min-width: 1200px) {}
     
             background-color: $button-portfolio;
             border-radius: 4px;
@@ -48,31 +95,95 @@
 
 
 .portfolio {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
+    //phone screen(<768px)
+    display: block;
+    
+    
+        //tablet screen (>768px )
+        @media screen and (min-width: 768px),
+        (max-width: 1199.98) {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: space-between;
+            width: 738px;
+
+        }
+    
+        //desctop screen (>1200px)
+        @media screen and (min-width: 1200px) {
+            display: flex;
+                flex-wrap: wrap;
+                gap: 30px;
+                width: 1170px;
+                
+        }
+    
+
+}
+
+.portfolio__item{
+    
+    //phone screen(<768px)
+    margin-bottom: 30px;
+    
+    
+    
+    
+        //tablet screen (>768px )
+        @media screen and (min-width: 768px),
+        (max-width: 1199.98) {
+            margin-bottom: 0px;
+            width: 354px;
+        }
+    
+        //desctop screen (>1200px)
+        @media screen and (min-width: 1200px) {
+            margin-bottom: 0px;
+            width: auto;
+            
+            
+        }
+}
+.portfolio__item:hover,
+.portfolio__item:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
 }
 
 
-&__link {
+.portfolio__link {
+    //phone screen(<768px)
+    
+    
+        //tablet screen (>768px )
+        @media screen and (min-width: 768px),
+        (max-width: 1199.98) {}
+    
+        //desctop screen (>1200px)
+        @media screen and (min-width: 1200px) {}
     display: block;
 
     transition-property: box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:hover,
-    &:focus {
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     
-        }
 
 
 }
 
 
-&__before-text-portfolio {
+.portfolio__before-text-portfolio {
+    //phone screen(<768px)
+    
+    
+        //tablet screen (>768px )
+        @media screen and (min-width: 768px),
+        (max-width: 1199.98) {}
+    
+        //desctop screen (>1200px)
+        @media screen and (min-width: 1200px) {}
     position: relative;
     overflow: hidden;
 
@@ -80,7 +191,16 @@
 
 
 
-&__text-hover-portfolio {
+.portfolio__text-hover-portfolio {
+    //phone screen(<768px)
+    
+    
+        //tablet screen (>768px )
+        @media screen and (min-width: 768px),
+        (max-width: 1199.98) {}
+    
+        //desctop screen (>1200px)
+        @media screen and (min-width: 1200px) {}
     display: flex;
     align-items: center;
     position: absolute;
@@ -98,12 +218,12 @@
 
 }
 
-&__link:hover &__text-hover-portfolio {
+.portfolio__link:hover .portfolio__text-hover-portfolio {
     transform: translateY(0);
     overflow: visible;
 }
 
-&__link:focus &__text-hover-portfolio {
+.portfolio__link:focus .portfolio__text-hover-portfolio {
     transform: translateY(0);
     overflow: visible;
 }
@@ -111,7 +231,16 @@
 
 
 
-&__p-text-hover-portfolio {
+.portfolio__p-text-hover-portfolio {
+    //phone screen(<768px)
+    
+    
+        //tablet screen (>768px )
+        @media screen and (min-width: 768px),
+        (max-width: 1199.98) {}
+    
+        //desctop screen (>1200px)
+        @media screen and (min-width: 1200px) {}
     font-size: 18px;
     letter-spacing: 0.03em;
     line-height: calc(28 / 18);
@@ -121,7 +250,16 @@
 }
 
 
-&__section-title-portfolio {
+.portfolio__section-title-portfolio {
+    //phone screen(<768px)
+    
+    
+        //tablet screen (>768px )
+        @media screen and (min-width: 768px),
+        (max-width: 1199.98) {}
+    
+        //desctop screen (>1200px)
+        @media screen and (min-width: 1200px) {}
     font-size: 18px;
     color: $primary-text-color;
     letter-spacing: 0.06em;
@@ -129,7 +267,16 @@
     margin-bottom: 4px;
 }
 
-&__text {
+.portfolio__text {
+    //phone screen(<768px)
+    
+    
+        //tablet screen (>768px )
+        @media screen and (min-width: 768px),
+        (max-width: 1199.98) {}
+    
+        //desctop screen (>1200px)
+        @media screen and (min-width: 1200px) {}
     font-size: 16px;
     color: $text-portfolio-team;
     letter-spacing: 0.03em;
@@ -137,16 +284,36 @@
 
 }
 
-&__link {
+.portfolio__link {
     text-decoration: none;
 }
 
-&__text-portfolio-box {
+.portfolio__text-portfolio-box {
+    //phone screen(<768px)
+    padding:  20px 24px 20px 24px;
+        border-left: 1px solid #EEEEEE;
+        border-right: 1px solid #EEEEEE;
+        border-bottom: 1px solid #EEEEEE;
+    
+        //tablet screen (>768px )
+        @media screen and (min-width: 768px),
+        (max-width: 1199.98) {
+            padding: 20px 24px 20px 24px;
+                border-left: 1px solid #EEEEEE;
+                border-right: 1px solid #EEEEEE;
+                border-bottom: 1px solid #EEEEEE;
+        
+        }
+    
+        //desctop screen (>1200px)
+        @media screen and (min-width: 1200px) {
+            padding: 20px 24px 20px 24px;
+                border-left: 1px solid #EEEEEE;
+                border-right: 1px solid #EEEEEE;
+                border-bottom: 1px solid #EEEEEE;
+        }
 
-    padding: 20px 24px 20px 24px;
-    border-left: 1px solid #EEEEEE;
-    border-right: 1px solid #EEEEEE;
-    border-bottom: 1px solid #EEEEEE;
+    
 
 
 }

@@ -1,28 +1,107 @@
 .footer {
+    //phone screen(<768px)
+    
+    
+        //tablet screen (>768px )
+        @media screen and (min-width: 768px),
+        (max-width: 1199.98) {}
+    
+        //desctop screen (>1200px)
+        @media screen and (min-width: 1200px) {}
     color: $primary-bg-color;
     background-color: $bg-color;
     padding-top: 0px;
     padding-bottom: 0px;
 
     &__logo {
-            color: $text-footer;
+        //phone screen(<768px)
+        color: $text-footer;
+            display: block;
+            text-align: center;
+        
+            //tablet screen (>768px )
+            @media screen and (min-width: 768px),
+            (max-width: 1199.98) {
+                display: block;
+                text-align: start;
+            }
+        
+            //desctop screen (>1200px)
+            @media screen and (min-width: 1200px) {
+                display: block;
+            }
+        
+            
     
         }
 }
 
 .footer-div {
+    //phone screen(<768px)
     display: flex;
+    flex-direction: column;
+    
     padding-top: 60px;
     padding-bottom: 60px;
-    align-items: baseline;
+    
+    
+    
+        //tablet screen (>768px )
+        @media screen and (min-width: 768px),
+        (max-width: 1199.98) {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            flex-direction: row
+            
+                }
+    
+        //desctop screen (>1200px)
+        @media screen and (min-width: 1200px) {
+            display: flex;
+                padding-top: 60px;
+                padding-bottom: 60px;
+                align-items: baseline;
+                flex-direction: row;
+                flex-wrap: nowrap
+        }
+    
 }
 
 .div-footer-text {
-    display: block;
-    margin-right: 70px;
+    //phone screen(<768px)
+    
+    text-align: center;
+    padding-bottom: 60px;
+    
+    
+        //tablet screen (>768px )
+        @media screen and (min-width: 768px),
+        (max-width: 1199.98) {
+            margin-right: 165px;
+            text-align: start;
+            padding-bottom: 0px;
+        }
+    
+        //desctop screen (>1200px)
+        @media screen and (min-width: 1200px) {
+            
+                margin-right: 70px;
+                padding-bottom: 0px;
+        }
+    
 }
 
 .site_nav_footer {
+    //phone screen(<768px)
+    
+    
+        //tablet screen (>768px )
+        @media screen and (min-width: 768px),
+        (max-width: 1199.98) {}
+    
+        //desctop screen (>1200px)
+        @media screen and (min-width: 1200px) {}
     margin-top: 20px;
 
     transition-property: color;
@@ -31,7 +110,16 @@
 
 }
 
-&__footer-adress  {
+.site_nav_footer__footer-adress  {
+    //phone screen(<768px)
+    
+    
+        //tablet screen (>768px )
+        @media screen and (min-width: 768px),
+        (max-width: 1199.98) {}
+    
+        //desctop screen (>1200px)
+        @media screen and (min-width: 1200px) {}
     color: $text-footer;
     font-size: 14px;
     font-style: normal;
@@ -46,7 +134,16 @@
 }
 
 
-&__footer-adress-contact {
+.site_nav_footer__footer-adress-contact {
+    //phone screen(<768px)
+    
+    
+        //tablet screen (>768px )
+        @media screen and (min-width: 768px),
+        (max-width: 1199.98) {}
+    
+        //desctop screen (>1200px)
+        @media screen and (min-width: 1200px) {}
     color: $footer-team-text;
     font-size: 14px;
     font-style: normal;
@@ -60,7 +157,16 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-&__footer-adress-contact-mail {
+.site_nav_footer__footer-adress-contact-mail {
+    //phone screen(<768px)
+    
+    
+        //tablet screen (>768px )
+        @media screen and (min-width: 768px),
+        (max-width: 1199.98) {}
+    
+        //desctop screen (>1200px)
+        @media screen and (min-width: 1200px) {}
     color: $footer-team-text;
     font-size: 14px;
     font-style: normal;
@@ -88,20 +194,79 @@
 
 /*===========================================*/
 
+.div-footer-icons{
+
+    //phone screen(<768px)
+    display: block;
+        text-align: center;
+    
+        //tablet screen (>768px )
+        @media screen and (min-width: 768px),
+        (max-width: 1199.98) {
+            display: block;
+                text-align: center;
+            
+        }
+    
+        //desctop screen (>1200px)
+        @media screen and (min-width: 1200px) {
+display: block;
+    text-align: center;
+        }
+    
+}
 
 .footer-title {
-    margin-top: 12px;
+    //phone screen(<768px)
     margin-bottom: 20px;
     font-size: 14px;
-    line-height: calc(16/14);
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
+        line-height: calc(16/14);
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        text-align: center;
+    
+        //tablet screen (>768px )
+        @media screen and (min-width: 768px),
+        (max-width: 1199.98) {
+            margin-top: 0px;
+            
+            
+        }
+    
+        //desctop screen (>1200px)
+        @media screen and (min-width: 1200px) {
+            margin-top: 12px;
+            text-align: start;
+                
+        }
+    
 }
 
 .footer-icon-box {
+    //phone screen(<768px)
     display: flex;
+    justify-content: center;
+    
+        //tablet screen (>768px )
+        @media screen and (min-width: 768px),
+        (max-width: 1199.98) {}
+    
+        //desctop screen (>1200px)
+        @media screen and (min-width: 1200px) {
+            display: flex;
+        }
+    
 
     &__link {
+        //phone screen(<768px)
+        
+        
+            //tablet screen (>768px )
+            @media screen and (min-width: 768px),
+            (max-width: 1199.98) {}
+        
+            //desctop screen (>1200px)
+            @media screen and (min-width: 1200px) {}
             display: flex;
             width: 44px;
             height: 44px;
@@ -145,81 +310,175 @@
 /*МЕЙЛИНГ*/
 
 .footer-mailing {
-    margin-left: 93px;
+    //phone screen(<768px)
+    display: block;
+    margin-top: 60px;
 
-    padding-top: 12px;
+    
+    
+        //tablet screen (>768px )
+        @media screen and (min-width: 768px),
+        (max-width: 1199.98) {
+            display: flex;
+            
+            margin-top: 60px;
+            
+        }
+    
+        //desctop screen (>1200px)
+        @media screen and (min-width: 1200px) {
+            margin-left: 93px;
+                padding-top: 12px;
+                margin-top: 0px;
+        }
+    
 }
 
 .mailing {
+    //phone screen(<768px)
+    
+    
+    
+        //tablet screen (>768px )
+        @media screen and (min-width: 768px),
+        (max-width: 1199.98) {}
+    
+        //desctop screen (>1200px)
+        @media screen and (min-width: 1200px) {
+            gap: 12px;
+        }
 
 
-    gap: 12px;
+    
 }
 
 
 .footer-form {
+    //phone screen(<768px)
+    flex-direction: column;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    
+    
+    
+        //tablet screen (>768px )
+        @media screen and (min-width: 768px),
+        (max-width: 1199.98) {}
+    
+        //desctop screen (>1200px)
+        @media screen and (min-width: 1200px) {
+            display: flex;
+                justify-content: space-between;
+                flex-direction: row
+        }
+    
 }
 
 
 .modal-label-mailing {
-    margin-right: 12px;
+    //phone screen(<768px)
     color: #757575;
-    width: 358px;
+    margin-bottom: 20px;
+        text-align: center;
+    
+    
+    
+    
+        //tablet screen (>768px )
+        @media screen and (min-width: 768px),
+        (max-width: 1199.98) {}
+    
+        //desctop screen (>1200px)
+        @media screen and (min-width: 1200px) {
+            text-align: start;
+                margin-right: 12px;
+                width: 358px;
+        }
+    
 
 }
 
 .mailing-icon_title {
+    //phone screen(<768px)
     display: block;
-    height: 16px;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    font-size: 14px;
-    line-height: calc(16 / 14);
-    letter-spacing: 0.03em;
-    font-weight: 700;
-    color: $primary-bg-color;
+    text-align: center;
+        height: 16px;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        font-size: 14px;
+        line-height: calc(16 / 14);
+        letter-spacing: 0.03em;
+        font-weight: 700;
+        color: $primary-bg-color;
+    
+    
+        //tablet screen (>768px )
+        @media screen and (min-width: 768px),
+        (max-width: 1199.98) {}
+    
+        //desctop screen (>1200px)
+        @media screen and (min-width: 1200px) {
+            text-align: start;
+        }
+    
 }
 
 .email-mailing {
-    width: 358px;
-    height: 50px;
-    padding: 15px 16px;
-
-    border: 1px solid rgba(255, 255, 255, 0.3);
-
-    background-color: $bg-color;
-    border-radius: 4px;
-
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    //phone screen(<768px)
+    
+        width: 450px;
+        height: 50px;
+        padding: 15px 16px;
+    
+        border: 1px solid rgba(255, 255, 255, 0.3);
+    
+        background-color: $bg-color;
+        border-radius: 4px;
+    
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+        //tablet screen (>768px )
+        @media screen and (min-width: 768px),
+        (max-width: 1199.98) {}
+    
+        //desctop screen (>1200px)
+        @media screen and (min-width: 1200px) {}
+    
 
 }
 
 .btn {
+    //phone screen(<768px)
     display: flex;
-    width: 200px;
-    height: 50px;
-    text-align: center;
-    align-items: center;
-
-
-    padding: 10px 28px;
-    border-radius: 4px;
-    background-color: $accent-color;
-    color: $primary-bg-color;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-
-    font-weight: 700;
-    font-size: 16px;
-    line-height: calc(30 / 16);
-
-    transition-property: background-color, color;
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        width: 200px;
+        height: 50px;
+        text-align: center;
+        align-items: center;
+    
+    
+        padding: 10px 28px;
+        border-radius: 4px;
+        background-color: $accent-color;
+        color: $primary-bg-color;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    
+        font-weight: 700;
+        font-size: 16px;
+        line-height: calc(30 / 16);
+    
+        transition-property: background-color, color;
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+        //tablet screen (>768px )
+        @media screen and (min-width: 768px),
+        (max-width: 1199.98) {}
+    
+        //desctop screen (>1200px)
+        @media screen and (min-width: 1200px) {}
+    
 
 }
 

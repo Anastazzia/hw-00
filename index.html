@@ -16,11 +16,19 @@
   </head>
   <body class="page">
     <!--Шапка-->
+
     <header class="header">
       <div class="container header__container">
         <a href="./index.html" class="logo header__logo"
           ><span class="logo__accent">Web</span>Studio</a
         >
+
+        <button class="js-open-menu header__menu-btn">
+          <svg class="header__menu-icon" width="40" height="40">
+            <use href="./images/modalicon/symbol-defs.svg#icon-mob_menu"></use>
+          </svg>
+        </button>
+
         <nav class="header__site_nav">
           <ul class="nav">
             <li class="nav__item">
@@ -33,7 +41,9 @@
             <li class="nav__item">
               <a href="./portfolio.html" class="nav__link">Портфоліо</a>
             </li>
-            <li class="nav__item"><a href="" class="nav__link">Контакти</a></li>
+            <li class="nav__item">
+              <a href="" class="nav__link">Контакти</a>
+            </li>
           </ul>
         </nav>
 
@@ -123,6 +133,7 @@
             <li class="works__item">
               <div class="works__img">
                 <img
+                  srcset="./images/desc/work/img1.png 1x ./images/desc/work/img1@2x.png 2x"
                   src="./images/box1.jpg"
                   alt="Створюємо, та програмуємо макет проекту"
                   width="370"
@@ -136,6 +147,7 @@
             <li class="works__item">
               <div class="works__img">
                 <img
+                  srcset="./images/desc/work/img2.png 1x ./images/desc/work/img2@2x.png 2x"
                   src="./images/box2.jpg"
                   alt="Підлаштовуємо їх під телефон"
                   width="370"
@@ -149,6 +161,7 @@
             <li class="works__item">
               <div class="works__img">
                 <img
+                  srcset="./images/desc/work/img3.png 1x ./images/desc/work/img3@2x.png 2x"
                   src="./images/box3.jpg"
                   alt="Допомагаємо підібрати колір у дизайні"
                   width="370"
@@ -164,17 +177,26 @@
       </section>
 
       <!--Команда-->
+
       <section class="section section-team">
         <div class="container">
           <h2 class="team-main-title">Наша команда</h2>
 
           <ul class="team">
             <li class="team__item">
-              <img
+              <!-- <img
+                srcset=""
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw "
                 class="team__img"
                 src="./images/img0.jpg"
                 alt="Чоловік в окулярах посміхається"
-                width="270"
+              />-->
+
+              <img
+                src="./images/mobile/team/team1_m.jpg"
+                srcset="./images/mobi/team/team1_m.jpg"
+                alt="Чоловік в окулярах посміхається"
+                width="450"
                 height="260"
               />
               <div class="team-personality__text">
@@ -249,7 +271,7 @@
                 class="team__img"
                 src="./images/img1.jpg"
                 alt="Жінка в окулярах посміхається"
-                width="270"
+                width="450"
                 height="260"
               />
               <div class="team-personality__text">
@@ -324,7 +346,7 @@
                 class="team__img"
                 src="./images/img2.jpg"
                 alt="Чоловік посміхається"
-                width="270"
+                width="450"
                 height="260"
               />
               <div class="team-personality__text">
@@ -397,7 +419,7 @@
                 class="team__img"
                 src="./images/img3.jpg"
                 alt="Чоловік в окулярах"
-                width="270"
+                width="450"
                 height="260"
               />
               <div class="team-personality__text">
@@ -717,6 +739,71 @@
         </form>
       </div>
     </div>
+    <!--Mobile menu-->
+    <div class="menu-container js-menu-container is-hidden" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg
+          class="menu-toggle-icon"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li><a href="./index.html" class="link current-menu">Студія</a></li>
+        <li><a href="./portfolio.html" class="link">Портфоліо</a></li>
+        <li><a href="" class="link">Контакти</a></li>
+      </ul>
+
+      <ul class="mobile-contacts">
+        <li class="mobile-contacts__item">
+          <a class="menu-number" href="tel:+380961111111">+38 096 111 11 11</a>
+        </li>
+        <li class="mobile-contacts__item">
+          <a class="menu-mail" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+
+      <ul class="mobile-socials">
+        <li class="mobil-socials__item">
+          <a class="mobil-socials__link" href="https://instagram.com"
+            >Instagram</a
+          >
+        </li>
+        <li class="mobil-socials__item">
+          <a class="mobil-socials__link" href="https://twitter.com">Twitter</a>
+        </li>
+        <li class="mobil-socials__item">
+          <a class="mobil-socials__link" href="https://facebook.com"
+            >Facebook</a
+          >
+        </li>
+        <li class="mobil-socials__item">
+          <a class="mobil-socials__link" href="https://linkedin.com"
+            >LinkedIn</a
+          >
+        </li>
+      </ul>
+    </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mob-menu.js"></script>
+
     <script src="./js/modal.js"></script>
   </body>
 </html>
